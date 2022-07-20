@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--http://theonesalon.com.br/
+    https://lespacehair.com.br/
+    https://merciestudiodebeleza.com.br/
+  -->
+    <!-- specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8" />
+    <!-- Displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Provides a brief summary of a web page -->
+    <meta name="description" content="Beauty salon business website template" />
+    <meta name="author" content="Leandro Amaral" />
+    <title>Hair Studio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" sizes="32x32" href="assets/favicon.ico" />
+    <!-- CSS File  -->
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <!-- <a href="#" class="header__logo">
+          <img src="assets/logo.png" alt="logo" />
+        </a> -->
+        <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__img"></div>
+          <h1>Beauty Salon - Hair and Aesthetics</h1>
+          <p>
+            The Sophia salon brings together a beauty salon and an aesthetic
+            center for men and women, with all hairdressing, manicure, pedicure,
+            waxing, “Bride’s Day” services, etc.
+          </p>
+          <div class="hero__btns">
+            <button class="hero__btn-download btn rackley">
+              Download our App
+            </button>
+            <a href="#" class="hero__btn-discover btn purple"
+              >Discover our Products</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Details Section -->
+      <section class="details">
+        <div class="details__container container">
+          <ul class="details__imgs-features">
+            <!-- Meet's Features -->
+            <li class="details__img-wrapper">
+              <img src="assets/desktop/img-1-hairstyles.jpg" alt="model1" />
+            </li>
+            <li class="details__img-wrapper">
+              <img src="assets/desktop/img-2-hairstyles.jpg" alt="model2" />
+            </li>
+            <li class="details__img-wrapper">
+              <img src="assets/desktop/img-3-hairstyles.jpg" alt="model3" />
+            </li>
+            <li class="details__img-wrapper">
+              <img src="assets/desktop/img-4-hairstyles.jpg" alt="model4" />
+            </li>
+          </ul>
+
+          <div class="details__text">
+            <h2>
+              <span class="overline">OPENING HOURS</span>
+              "Your beauty is our inspiration. Your well-being, our vocation."
+            </h2>
+            <p>We are waiting for you!</p>
+            <br />
+            <p>Mon - Fri: 9:00 - 18:00</p>
+            <p>Sat: 9:00 - 14:00</p>
+            <p>Sun: closed</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (Experience Section) -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h2>Experience more together</h2>
+        <p>
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <button class="footer__btn-download btn purple">
+          Download our App
+          <span class="version">v1.0</span>
+        </button>
+      </div>
+     <!-- <div class="footer__bottom">
+          <div class="socials">
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+            <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+            <img src="./images/icon-pinterest.svg" alt="pinterest" />
+            <img src="./images/icon-instagram.svg" alt="instagram" />
+          </div>
+        </div> -->
+      </div>
+    </footer>
+
+    <script>
+      // No actions (status)
+      const status = (_) => {
+        !document.body.querySelectorAll(".status").length &&
+          (document.body.insertAdjacentHTML(
+            "beforeend",
+            `<div role="status" class="status">No Actions... This is a preview</div>`
+          ),
+          setTimeout((_) => {
+            document.body.querySelector(".status").remove();
+          }, 3300));
+      };
+      document.body
+        .querySelectorAll(".btn")
+        .forEach((btn) => btn.addEventListener("click", status));
+    </script>
+  </body>
+</html>
