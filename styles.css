@@ -334,7 +334,7 @@ main {
   position: absolute;
   top: 0;
   left: 0px;
-  background: url(assets/desktop/image-hero-left.jpg) no-repeat top 60px left;
+  background: url(assets/images/image-hero-left.jpg) no-repeat top 60px left;
 }
 .hero__img::after {
   content: "";
@@ -343,7 +343,7 @@ main {
   position: absolute;
   top: 0;
   right: 0px;
-  background: url(assets/desktop/image-hero-right.jpg) no-repeat top 60px
+  background: url(assets/images/image-hero-right.jpg) no-repeat top 60px
     right;
 }
 .hero__container h1 {
