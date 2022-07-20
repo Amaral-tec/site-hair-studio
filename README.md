@@ -9,5 +9,5 @@ The commands were used:
 -animation (for "No Actions... This is a preview" message)
 
 <div align="center">
-    <img src="assets/images/overwies.jpg" />
+    <img src="assets/images/overviews.jpg" />
 </div>
